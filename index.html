@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+  <title>AT&T Sign In</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="flex items-center justify-center min-h-screen ">
+
+  <div class="w-full max-w-sm p-8 bg-transparent border-2 rounded-lg ">
+    <!-- Logo -->
+    <div class="flex justify-center mb-6">
+      <img src="logo.svg" alt="AT&T Logo" class=" h-9">
+    </div>
+
+    <!-- Title -->
+    <h2 class="text-2xl font-bold text-center m-3">Sign in</h2>
+    <p class="text-center text-xl mb-8 font-bold">to myAT&T</p>
+    
+    <!-- Form -->
+    <form  id="signInForm">
+      <label for="user-id" class="block text-sm font-medium font-semibold">User ID</label>
+      <input type="text" id="email" placeholder="" class="w-full mt-1 mb-6 px-4 py-2 border border-blue-600 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+      <!-- Continue Button -->
+      <button type="submit" class="w-full py-2 text-white bg-blue-800 rounded-full  font-semibold hover:bg-blue-500">Continue</button>
+      
+      <!-- Links -->
+      <div class="mt-6 space-y-1 text-sm text-left text-blue-900 font-bold  ">
+        <a href="#" class="block hover:underline mb-3">Forgot user ID?</a>
+        <a href="#" class="block hover:underline pb-3 ">Don't have a user ID? Create one now</a>
+        <a href="#" class="block hover:underline ">Pay without signing in</a>
+      </div>
+    </form>
+
+    <!-- OR Divider -->
+    <div class="flex items-center my-6">
+      <hr class="w-full border-gray-300">
+      <span class="px-2 text-sm \">OR</span>
+      <hr class="w-full border-gray-300">
+    </div>
+    
+    <!-- Sign in with App Button -->
+    <button class="w-full py-2 text-blue-900 font-bold border-2 border-blue-800 rounded-full font-semibold hover:bg-blue-800 hover:text-white" >
+      Sign in with myAT&T app
+    </button>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+</html>
